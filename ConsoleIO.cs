@@ -265,6 +265,7 @@ namespace myFirstProject
             Console.Write($"{numbers[0]} {numbers[1]} {numbers[2]}");
             */
 
+            /*
             int[] numbers = new int[5];
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -274,6 +275,29 @@ namespace myFirstProject
             for (int i = 0; i < numbers.Length; i++)
             {
                 Console.Write($"{numbers[i]} ");
+            }
+            */
+            /*
+            int[] arry = new int[] { 10, 20, 30, 40 };
+            int total = 0;
+            for (int i = 0; i < arry.Length; i++)
+            {
+                total += arry[i];
+            }
+            Console.WriteLine(total);
+            */
+
+            int[] array = new int[] { 1, 2, 4, 6, 3, 5, 7, 8, 9, 10 };
+            Array.Sort(array);
+            foreach(int number in array)
+            {
+                Console.Write($"{number} ");
+            }
+            Console.WriteLine();
+            Array.Reverse(array);
+            foreach(int num in array)
+            {
+                Console.Write($"{num} ");
             }
         }
     }
