@@ -287,6 +287,7 @@ namespace myFirstProject
             Console.WriteLine(total);
             */
 
+            /*
             int[] array = new int[] { 1, 2, 4, 6, 3, 5, 7, 8, 9, 10 };
             Array.Sort(array);
             foreach(int number in array)
@@ -298,6 +299,23 @@ namespace myFirstProject
             foreach(int num in array)
             {
                 Console.Write($"{num} ");
+            }
+            */
+
+            List<int> numbers = new List<int>();
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Write("Enter a number:");
+                numbers.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            for(int i = 0; i < numbers.Count; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            Console.WriteLine();
+            foreach(int num in numbers)
+            {
+                Console.WriteLine(num);
             }
         }
     }
