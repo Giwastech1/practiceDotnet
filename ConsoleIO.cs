@@ -317,6 +317,13 @@ namespace myFirstProject
             {
                 Console.WriteLine(num);
             }
+            Console.WriteLine();
+            numbers.Remove(2);
+            numbers.RemoveAt(3);
+            foreach(int num in numbers)
+            {
+                Console.WriteLine(num);
+            }
         }
     }
 }
