@@ -10,6 +10,7 @@ namespace myFirstProject
     {
         static void Main(string[] args)
         {
+            /*
             Console.WriteLine("Hello world");
 
             int age = 35;
@@ -46,7 +47,8 @@ namespace myFirstProject
 
             StringConvert.Run();
             ConsoleIO.Run();
-
+            */
+            Function.Run();
             Console.ReadLine();
         }
     }

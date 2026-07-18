@@ -10,6 +10,7 @@ namespace myFirstProject
     {
         public static void Run()
         {
+            /*
             string myAge = "100";
             int convertAge = Convert.ToInt32(myAge);
             Console.WriteLine(convertAge);
@@ -75,6 +76,7 @@ namespace myFirstProject
             result = firstNumber % secondNumber;
             Console.WriteLine(result);
             Console.WriteLine();
+            */
         }
     }
 }

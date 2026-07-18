@@ -301,7 +301,7 @@ namespace myFirstProject
                 Console.Write($"{num} ");
             }
             */
-
+            /*
             List<int> numbers = new List<int>();
             for (int i = 0; i < 5; i++)
             {
@@ -324,6 +324,77 @@ namespace myFirstProject
             {
                 Console.WriteLine(num);
             }
+            */
+            /*
+            Dictionary<int, string> studentName = new Dictionary<int, string>();
+            studentName.Add(1, "Giwa");
+            studentName.Add(2, "Bayo");
+            studentName.Add(7, "Halimah");
+            Console.WriteLine(studentName[1]);
+     
+            Console.WriteLine();
+            foreach(KeyValuePair<int, string> name in studentName)
+            {
+                Console.WriteLine($"key: {name.Key}, value: {name.Value}");
+            }
+            */
+            /*
+            List<int> number = new List<int>();
+            {
+                number.Add(4);
+                number.Add(3);
+                number.Add(7);
+            }
+            foreach(int num in number)
+            {
+                Console.WriteLine(num);
+            }
+            */
+
+            //Exercise
+            /*
+            List<int> evenNumbers = new List<int>();
+            for(int i = 0; i <= 20; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    evenNumbers.Add(i);
+                }
+            }
+            foreach(int number in evenNumbers)
+            {
+                Console.Write($"{number} ");
+            }
+            Console.WriteLine();
+            List<int> oddNumbers = new List<int>();
+            for (int i = 0; i <= 20; i++)
+            {
+                if (i % 2 == 1)
+                {
+                    oddNumbers.Add(i);
+                }
+            }
+            foreach (int number in oddNumbers)
+            {
+                Console.Write($"{number} ");
+            }
+            */
+            //Exercise
+            /*
+            int num = 7;
+            int length = 5;
+            int[] myArray = new int[length];
+            for (int i = 1; i <= length; i++)
+            {
+                myArray[i-1] = i * num;
+            }
+            foreach(int finalArray in myArray)
+            {
+                Console.Write($"{finalArray} ");
+            }
+            Console.WriteLine();
+            */
+
         }
     }
 }
