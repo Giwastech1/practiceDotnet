@@ -8,22 +8,19 @@ namespace myFirstProject
 {
     internal class Function
     {
-        static string myName = "Giwa Toheeb";
         public static void Run()
         {
-            Console.WriteLine("Hello function method\nWelcome to my program.");
-            PrintArray();
-            Console.Title = myName;
+            string name = PrintIntro();
+            int age = MyAge();
+            Console.WriteLine($"My name is {name}, I am {age} years of age");
         }
-          static void PrintArray()
+        static string PrintIntro()
         {
-            int[] myArray = new int[] { 0, 1, 2 };
-            foreach (int num in myArray)
-            {
-                Console.Write($"{num} ");
-            }
-            Console.WriteLine();
-            Console.WriteLine(myName+);
+            return "Giwa!";
+        }
+        static int MyAge()
+        {
+            return 23;
         }
     }
 }
