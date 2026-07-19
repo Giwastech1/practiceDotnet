@@ -17,24 +17,24 @@ namespace myFirstProject
             int age = ReturnAge();
             Console.Title = $"{name}-{age}";
             Console.WriteLine($"My name is {name}, I am {age} years old");
-            ReceiveNum();
-        }
-        static void ReceiveNum()
-        {
             int[] numbers = new int[3];
             for (int i = 0; i < numbers.Length; i++)
             {
-                Console.Write("Enter a number ");
-                numbers[i] = Convert.ToInt32(Console.ReadLine());
+                numbers[i] = ReadnumFromConsole();
             }
             foreach(int number in numbers)
             {
                 Console.Write($"{number} ");
             }
         }
+        static int ReadnumFromConsole()
+        {
+            Console.Write("Enter a number: ");
+            return Convert.ToInt32(Console.ReadLine());
+        }
         static void PrintIntro()
         {
-            Console.WriteLine( "Welcome to my programming session");
+            Console.WriteLine($"Welcome to my programming session");
         }
         static int ReturnAge()
         {
