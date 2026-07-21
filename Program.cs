@@ -48,7 +48,9 @@ namespace myFirstProject
             StringConvert.Run();
             ConsoleIO.Run();
             Function.Run();
+            Parameters.Run();
             */
+            Exercise.Run();
             Console.ReadLine();
         }
     }
