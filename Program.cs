@@ -49,8 +49,9 @@ namespace myFirstProject
             ConsoleIO.Run();
             Function.Run();
             Parameters.Run();
-            */
             Exercise.Run();
+            */
+            TryCatch.Run();
             Console.ReadLine();
         }
     }
