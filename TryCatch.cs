@@ -10,22 +10,34 @@ namespace myFirstProject
     {
         public static void Run()
         {
-            Console.Write("Enter a number: ");
-            try
+            bool isNotValid = true;
+            while (isNotValid)
             {
-                int inputWord = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine($"The number you enter is {inputWord}");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Please enter a correct number format");
-            }
-            catch(OverflowException)
-            {
-                Console.WriteLine("Plese enter a number between 0 and 2billion");
+                try
+                {
+                    Console.Write("Please, enter a number: ");
+                    int inputWord = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine($"The number you entered is {inputWord}");
+                    isNotValid = false;
+                }
+                catch (FormatException e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine();
+                }
+                catch (OverflowException e)
+                {
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine();
+                }
+                catch (Exception)
+                {
+                    Console.WriteLine("Error reading input");
+                    Console.WriteLine();
+                }
             }
             Console.WriteLine();
-            Console.WriteLine("Thank you");
+            Console.WriteLine("Thank you!");
         }
     }
 }
