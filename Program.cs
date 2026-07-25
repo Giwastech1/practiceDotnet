@@ -50,8 +50,9 @@ namespace myFirstProject
             Function.Run();
             Parameters.Run();
             Exercise.Run();
-            */
             TryCatch.Run();
+            */
+            Structure.Run();
             Console.ReadLine();
         }
     }
